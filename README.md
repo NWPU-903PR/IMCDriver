@@ -1,8 +1,8 @@
-# IMCDriver# IMCDriver
+# IMCDriver
 Identifying Driver Genes for Individual Patients through Inductive Matrix Completion
 
 
-## Tested hardware configuration
+## Hardware configuration
 ```
 RAM: 16 GB
 ```
