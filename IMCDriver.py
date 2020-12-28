@@ -1,5 +1,5 @@
 #***********************************
-# Run the command 'python test_with_LOOCV.py' in the Terminal to implement IMC with LOOCV test method.
+# Run the command 'python IMCDriver.py' in the Terminal to implement IMC.
 # Or directly run this file in the Pycharm IDE.
 
 # Note that, before running this script, you should run the script of data_preprocess.py to prepare the data for IMC.
@@ -45,8 +45,7 @@ def cal_pca_minmaxstd(df1,pca_n_comp):
     minMax = MinMaxScaler()
     return minMax.fit_transform(dfpca)
 
-# Apply the leave-one-out cross-validation (LOOCV) test method
-# to score the mutated genes for each sample in a cancer dataset.
+# Apply the test method to score the mutated genes for each sample in a cancer dataset.
 # The predicted file is saved in './newresults/%s/pre.txt' % cancer_folder
 # The gold standard file is saved in './newresults/%s/truth.txt' % cancer_folder
 def personalized_validating_with_LOOCV(cancer_folder):
